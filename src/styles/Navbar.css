@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6f61; /* Vibrant coral */
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Logo Styling */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 45px; /* Adjust logo size */
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.navbar-links a:hover {
+    color: #ffeaa7; /* Light yellow */
+}
+
+/* Login Button */
+.login-btn {
+    background-color: white;
+    color: black !important;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: green;
+    color: white !important;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .login-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
